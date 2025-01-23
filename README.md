@@ -15,6 +15,16 @@ This Weather Application is a simple yet powerful web app that provides real-tim
 
 ---
 
+## Screenshot
+
+![Weather App Screenshot](./assets/screenshot.png)
+
+## Features
+- Search for current weather and a 7-day forecast.
+- Displays temperature, humidity, wind speed, sunrise, and sunset for each day.
+- Beautiful UI with a dynamic weather-themed background.
+
+
 ## Technologies Used
 
 1. **Frontend**:
