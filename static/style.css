@@ -1,11 +1,14 @@
 body {
+    body {
     font-family: Arial, sans-serif;
-    background: url('https://source.unsplash.com/1600x900/?weather,sky') no-repeat center center fixed;
+    background: url('/static/images/image.jpg');
     background-size: cover;
-    color: #fff;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     margin: 0;
     padding: 0;
     text-align: center;
+
 }
 
 h1 {
