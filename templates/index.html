@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Weather App</h1>
+    <p id="date">{{ today_date }}</p>
+    <form method="POST">
+        <input type="text" name="city" placeholder="Enter city name" required>
+        <button type="submit">Get Weather</button>
+    </form>
+
+    {% if weather_data %}
+        <h2>Weather in {{ weather_data.name }}</h2>
+        <img src="http://openweathermap.org/img/wn/{{ weather_data.weather[0].icon }}@2x.png" alt="{{ weather_data.weather[0].description }}">
+        <p>Temperature: {{ weather_data.main.temp }}°C</p>
+        <p>Condition: {{ weather_data.weather[0].description }}</p>
+        <p>Humidity: {{ weather_data.main.humidity }}%</p>
+        <p>Wind Speed: {{ weather_data.wind.speed }} m/s</p>
+        <p>Sunrise: {{ weather_data.sys.sunrise_formatted }}</p>
+        <p>Sunset: {{ weather_data.sys.sunset_formatted }}</p>
+
+        <h3>7-Day Forecast</h3>
+        <div id="forecast">
+            {% for day in forecast_data.daily %}
+                <div class="forecast-day">
+                    <p><strong>{{ (datetime.utcnow() + timedelta(days=loop.index0)).strftime('%A') }}</strong></p>
+                    <p>{{ day.temp.day }}°C</p>
+                    <img src="http://openweathermap.org/img/wn/{{ day.weather[0].icon }}@2x.png" alt="{{ day.weather[0].description }}">
+                    <p>{{ day.weather[0].description }}</p>
+                </div>
+            {% endfor %}
+        </div>
+    {% elif error %}
+        <p style="color: red;">{{ error }}</p>
+    {% endif %}
+</body>
+</html>

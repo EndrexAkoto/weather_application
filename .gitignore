@@ -1,0 +1,51 @@
+# Python specific
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Environment variables
+.env
+
+# IDE/Editor specific
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Byte-compiled Python files
+*.pyc
+
+# Log files
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Node-related (if you happen to use Node.js tools)
+node_modules/
+
+# Static files generated
+*.cache
+*.bak
+*.tmp
+
+# Flask-specific
+instance/
+*.sqlite3
+
+# Coverage reports
+htmlcov/
+*.cover
+*.coverage
+
+# Testing
+.tox/
+.nox/
+pytest_cache/
+coverage.xml
+
+# Deployment
+*.env.*
+*.bak

@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('https://source.unsplash.com/1600x900/?weather,sky') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    color: #ffeb3b;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    margin-top: 20px;
+}
+
+#date {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #ffeb3b;
+}
+
+form {
+    margin: 20px auto;
+}
+
+input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #4a148c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #6a1b9a;
+}
+
+h2 {
+    color: #ffeb3b;
+    margin-top: 20px;
+}
+
+#forecast {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.forecast-day {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    width: 120px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.forecast-day img {
+    width: 50px;
+    height: 50px;
+}
+
+.forecast-day p {
+    margin: 5px 0;
+}
