@@ -1,18 +1,16 @@
 body {
-    body {
     font-family: Arial, sans-serif;
-    background: url('/static/images/image.jpg');
+    background: url('../static/images/image.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     margin: 0;
     padding: 0;
     text-align: center;
-
 }
 
 h1 {
-    color: #ffeb3b;
+    color: #ffffff;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
     margin-top: 20px;
 }
@@ -20,7 +18,7 @@ h1 {
 #date {
     font-size: 1.2rem;
     margin-bottom: 20px;
-    color: #ffeb3b;
+    color: #ffffff;
 }
 
 form {
@@ -50,7 +48,7 @@ button:hover {
 }
 
 h2 {
-    color: #ffeb3b;
+    color: #ffffff;
     margin-top: 20px;
 }
 
@@ -68,8 +66,9 @@ h2 {
     padding: 10px;
     border-radius: 10px;
     width: 120px;
-    text-align: center;
+    text-align: left;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    margin: 10px;
 }
 
 .forecast-day img {
