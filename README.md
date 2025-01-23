@@ -17,7 +17,7 @@ This Weather Application is a simple yet powerful web app that provides real-tim
 
 ## Screenshot
 
-![Weather App Screenshot](../assets/screenshot.png)
+![Weather App Screenshot](./static/images/screenshot.png)
 
 ## Features
 - Search for current weather and a 7-day forecast.
